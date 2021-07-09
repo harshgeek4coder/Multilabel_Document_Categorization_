@@ -6,6 +6,16 @@ This Task consists of two subtasks :
 - Subtask I  : Unsupervised topic modelling
 - Subtask II : Learning a supervised multi-Topic Classifier
 
+### Running :
+- Clone the Repo
+- Activate your virtualenv.
+- Run the following script in CLI :
+```
+pip install -r requirements.txt in your shell.
+python main.py
+```
+- Please NOTE : You are supposed to put this file : ``` glove.6B.300d.txt ``` in this ```glove directory``` before running ```main.py```. Please Refer to this [Readme](https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/glove/README.md) for further instructions.
+
 ### Root Folder Structure : 
 ```
 │   data_process.py
