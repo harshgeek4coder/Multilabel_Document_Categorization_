@@ -15,7 +15,14 @@ This Task consists of two subtasks :
 pip install -r requirements.txt in your shell.
 python main.py
 ```
-- Please NOTE : You are supposed to put this file : ``` glove.6B.300d.txt ``` in this ```glove directory``` before running ```main.py```. Please Refer to this [Readme](https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/glove/README.md) for further instructions.
+- Please NOTE : 
+  - You are supposed to put this file : ``` glove.6B.300d.txt ``` in this ```glove directory``` before running ```main.py```. Please Refer to this [Readme](https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/glove/README.md) for further instructions.
+   - You would also have to download the following files [If Not Already Downloaded]:
+   ```
+   - nltk.download('stopwords')
+   - nltk.download('punkt')
+   - nltk.download('wordnet')
+   ```
 
 ### Root Folder Structure : 
 ```
