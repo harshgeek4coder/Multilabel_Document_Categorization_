@@ -33,9 +33,9 @@ python main.py
 │   utils.py
 │
 ├───datasets
-│       pre_processed_df.csv
+│       pre_processed_df.csv [This file will be automatically added once you run main.py]
 │       sentisum-assessment-dataset.csv
 │
 └───glove
-        glove.6B.300d.txt
+        glove.6B.300d.txt [After downloading and putting this file in glove directory.]
 ```
