@@ -48,6 +48,27 @@ python main.py
         glove.6B.300d.txt [After downloading and putting this file in glove directory.]
 ```
 
+### Visual Analysis :
+- Flow Chart of subtask 1 and 2 : <br>
+
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/flowchart.png">
+
+- Model Architecture : <br>
+
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/model%20plot.jpg">
+
+- Model Performance : <br>
+
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/model%20performance%20plot.jpg">
+
+- Word Cloud : <br>
+
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/word%20cloud.png">
+
+- Top 10 Words : <br>
+
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/top%2010%20words.png">
+
 ### Results :
 
 - For Unsupervised Multi Label Classifier - GridSearchCV on LDA Model : <br>
@@ -70,6 +91,9 @@ Model perplexity:  55.26047238754284
 ### Inferences :
 
 For Supervised Inference : <br>
+
 <img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/inference%20supervised.jpg">
+
 For Unsupervised Inference : <br>
+
 <img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/inference%20unsupervised.jpg">
