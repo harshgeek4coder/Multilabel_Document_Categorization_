@@ -47,3 +47,29 @@ python main.py
 └───glove
         glove.6B.300d.txt [After downloading and putting this file in glove directory.]
 ```
+
+### Results :
+
+- For Unsupervised Multi Label Classifier - GridSearchCV on LDA Model : <br>
+```
+Fitting 3 folds for each of 12 candidates, totalling 36 fits
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done  36 out of  36 | elapsed: 10.7min finished
+Best model's params:  {'learning_decay': 0.75, 'learning_offset': 30, 'n_components': 12}
+Best log likelihood score:  -83160.21471701778
+Model perplexity:  55.26047238754284
+```
+
+- For Supervised Multi Label Classifier : <br>
+```
+|                             Model                             	| Accuracy  	|  Loss 	|
+|:-------------------------------------------------------------:	|:---------:	|:-----:	|
+|  Bidirectional LSTMs + Convnet 1-D + Latent Embeddings - 256-D 	|  76.22 %  	| 0.808 	|
+|  Bidirectional LSTMs + Convnet 1-D + GloVe Embeddings - 300-D 	|  80.46 %  	| 0.667 	|
+```
+### Inferences :
+
+For Supervised Inference : <br>
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/inference%20supervised.jpg">
+For Unsupervised Inference : <br>
+<img src="https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/visuals/inference%20unsupervised.jpg">
