@@ -32,13 +32,16 @@ def get_post_processed_df():
 
     #Final Order Topic Wise :
 
-    topics_dict={0:'value for money',1:'garage service',2: 'mobile fitter',
-                3:'length of fitting',4: 'booking confusion', 5:'delivery punctuality', 6:'discounts' ,
-                7:'location', 8:'change of date' ,9: 'tyre quality' ,10: 'wait time',  11:'ease of booking'}
+    topics_dict_2={
+    0:'value for money',1:'garage service',2: 'mobile fitter',
+             3:'change of date',4: 'wait time', 5:'delivery punctuality', 6:'ease of booking' ,
+             7:'location', 8:'booking confusion' ,9: 'tyre quality' ,10: 'length of fitting',  11:'discounts' }
+    
+
 
     new_df=df_final
     new_df['target_label']='temp'
-    new_df['target_label']=new_df['main_topic'].map(topics_dict)
+    new_df['target_label']=new_df['main_topic'].map(topics_dict_2)
 
     print("Exporting Fully post processed dataframe now..!")
     new_df.to_csv('pre_processed_df.csv')

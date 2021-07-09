@@ -9,3 +9,8 @@ def load_preprocess(data_path):
     documents=df['text'].apply(pre_process)
 
     return documents
+
+def pre_process_df(dataframe):
+    dataframe=dataframe['Text'].apply(pre_process)
+
+    return dataframe
