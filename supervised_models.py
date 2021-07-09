@@ -29,8 +29,8 @@ def create_model(train_padded,validation_padded):
 
 def train_model(model,train_padded,validation_padded,training_labels,validation_labels):
     epochs = 1
-    batch_size = 32
-    #filepath="weights_best_lstms_n_cnn.h5"
+    batch_size = 256
+    
     tqdm_callback = tfa.callbacks.TQDMProgressBar()
     
     callbacks_list = [EarlyStopping(monitor='val_loss', mode='min', patience=3, verbose=0),tqdm_callback]

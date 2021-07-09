@@ -4,7 +4,7 @@ from get_features import *
 from data_process import *
 
 
-data_path='sentisum-assessment-dataset.csv'
+data_path='.\datasets\sentisum-assessment-dataset.csv'
 documents=load_preprocess(data_path)
 df=pd.read_csv(data_path,names=['text','text2'],header=0,usecols=['text'])
 
@@ -44,7 +44,7 @@ def get_post_processed_df():
     new_df['target_label']=new_df['main_topic'].map(topics_dict_2)
 
     print("Exporting Fully post processed dataframe now..!")
-    new_df.to_csv('pre_processed_df.csv')
+    new_df.to_csv('.\datasets\pre_processed_df.csv')
     print("Exported..")
 
     return new_df

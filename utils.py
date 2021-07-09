@@ -36,6 +36,8 @@ warnings.filterwarnings('ignore', category=DeprecationWarning)
 warnings.filterwarnings('ignore', category=FutureWarning)
 
 
+import os
+os.mkdir('.\saved_models_state')
 
 
 stemmer=PorterStemmer()

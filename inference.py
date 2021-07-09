@@ -9,7 +9,7 @@ topic_names=['value for money','garage service', 'mobile fitter',
 
 def get_inference_from_supervised(text,model,max_len,tokenizer,encode):  
   
-  print("Inference and Results from Supervised model Inference : \n")
+  print("\n Inference and Results from Supervised model Inference : \n")
   new_text = [clean_text(text)]
   print(text)
   print(new_text)
@@ -23,7 +23,7 @@ def get_inference_from_supervised(text,model,max_len,tokenizer,encode):
   predicted_label = encode.inverse_transform(pred)
   print('')
  
-  print(f'Predicted Topic is: {predicted_label[0]}')
+  print(f'Best Predicted Topic is: {predicted_label[0]}')
   print("Top 3 Topic Categories : ", n_cat)
 
   return n_cat
@@ -47,4 +47,7 @@ def get_inference_from_unsupervised_model(model, vectorizer, text, threshold):
         return 'None', -1, set()
 
     print("Inference and Results from Unsupervised model Inference : \n")
+    print("Best Predicted Topic is : ",topic_names[np.argmax(score)])
+    print("Top 3 Topic Categories : ",n_cat)
+    
     return topic_names[np.argmax(score)], score, labels,idx,n_cat

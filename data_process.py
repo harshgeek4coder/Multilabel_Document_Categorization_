@@ -1,7 +1,7 @@
 from utils import *
 
 
-data_path='sentisum-assessment-dataset.csv'
+data_path='.\datasets\sentisum-assessment-dataset.csv'
 
 def load_preprocess(data_path):
     

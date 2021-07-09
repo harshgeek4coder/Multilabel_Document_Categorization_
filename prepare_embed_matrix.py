@@ -6,7 +6,7 @@ def prepare_embeddings(word_index):
     print("Now Preparing Embedding Matrix...!")
 
     #word_index = tokenizer.word_index
-    glove_dir = r"D:\SentiSum Taskk\NLP Exercise Dataset\final\glove\glove.6B.300d.txt"
+    glove_dir = ".\glove\glove.6B.300d.txt"
     embeddings_index = {}
 
 

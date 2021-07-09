@@ -3,7 +3,7 @@ from get_features import *
 from  data_process import *
 
 
-data_path='sentisum-assessment-dataset.csv'
+data_path='.\datasets\sentisum-assessment-dataset.csv'
 documents=load_preprocess(data_path)
 
 tfidf_vectorizer,tfidf,tfidf_feature_names=get_tfidf_features(documents)

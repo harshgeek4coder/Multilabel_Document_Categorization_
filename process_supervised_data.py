@@ -2,11 +2,6 @@ from utils import *
 from post_process import get_post_processed_df
 from data_process import pre_process_df
 
-#df=get_post_processed_df()
-
-#df_text=pre_process_df(df)
-#text = df["Text"].values
-#labels = df['target_label'].values
 
 
 def get_x_y(text,labels):

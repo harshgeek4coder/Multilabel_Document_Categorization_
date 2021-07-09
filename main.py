@@ -10,7 +10,8 @@ from prepare_embed_matrix import prepare_embeddings
 from save_n_load_state import save_model_state,load_model_state
 from inference import get_inference_from_supervised,get_inference_from_unsupervised_model
 
-data_path='sentisum-assessment-dataset.csv'
+
+data_path='.\datasets\sentisum-assessment-dataset.csv'
 documents=load_preprocess(data_path)
 print("Data loaded..!")
 

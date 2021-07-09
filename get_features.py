@@ -2,7 +2,7 @@ from utils import *
 from data_process import load_preprocess
 
 
-data_path='sentisum-assessment-dataset.csv'
+data_path='.\datasets\sentisum-assessment-dataset.csv'
 documents=load_preprocess(data_path)
 
 no_features = 12000
