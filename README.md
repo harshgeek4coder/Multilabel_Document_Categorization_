@@ -1,9 +1,8 @@
 # Multilabel Document Categorization
 
 This Repository consists of work done for performing multilabel document categorization using both unsupervised and supervised learning.
-Please Refer to this [Task Report Document](https://github.com/harshgeek4coder/Multilabel_Document_Categorization_/blob/main/Task%20Report.pdf) For Full Analysis of this Entire Task.
 
-This Task consists of two subtasks :
+This Work consists of two subtasks :
 - Subtask I  : Unsupervised topic modelling
 - Subtask II : Learning a supervised multi-Topic Classifier
 
